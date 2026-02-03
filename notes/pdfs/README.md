@@ -1,0 +1,1 @@
+Place your LaTeX-generated PDF notes here. Suggested filenames: quantum-mechanics.pdf, statistical-mechanics.pdf, classical-mechanics.pdf, electrodynamics.pdf, mathematical-methods.pdf
