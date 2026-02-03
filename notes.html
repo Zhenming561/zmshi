@@ -3,13 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaTeX Notes</title>
+    <title>Notes - Zhenming Shi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+        
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+        
+        .page-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        .page-header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .page-header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .note-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .note-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .note-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .note-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .note-image.placeholder::after {
+            content: '📚';
+            font-size: 5em;
+        }
+        
+        .note-content {
+            padding: 25px;
+        }
+        
+        .note-content h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .note-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .note-description {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .note-topics {
+            margin-bottom: 20px;
+        }
+        
+        .note-topics h3 {
+            font-size: 1em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .note-topics ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .note-topics li {
+            padding: 5px 0;
+            color: #555;
+            border-left: 3px solid #667eea;
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .info-section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .info-section p, .info-section ul {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .info-section ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .notes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>LaTeX Notes</h1>
-    <h2>Quantum Mechanics</h2>
-    <p>Your notes for Quantum Mechanics go here.</p>
-    <h2>Statistical Mechanics</h2>
-    <p>Your notes for Statistical Mechanics go here.</p>
+    <div class="page-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="page-header">
+            <h1>LaTeX Notes Collection</h1>
+            <p>Comprehensive study notes compiled during my physics courses</p>
+        </div>
+
+        <div class="notes-grid">
+            <!-- Note Card 1: Quantum Mechanics -->
+            <div class="note-card">
+                <div class="note-image placeholder">
+                    <!-- Replace with: <img src="assets/images/quantum-mechanics-preview.jpg" alt="Quantum Mechanics"> -->
+                </div>
+                <div class="note-content">
+                    <h2>Quantum Mechanics</h2>
+                    <div class="note-meta">
+                        <span>📅 Updated: January 2026</span>
+                        <span>📄 ~120 pages</span>
+                    </div>
+                    <div class="note-description">
+                        Comprehensive notes covering the fundamentals of quantum mechanics, from mathematical foundations to advanced applications in atomic physics.
+                    </div>
+                    <div class="note-topics">
+                        <h3>Topics Covered:</h3>
+                        <ul>
+                            <li>Hilbert spaces & operators</li>
+                            <li>Schrödinger equation</li>
+                            <li>Harmonic oscillator & hydrogen atom</li>
+                            <li>Angular momentum & spin</li>
+                            <li>Perturbation theory</li>
+                        </ul>
+                    </div>
+                    <a href="notes/pdfs/quantum-mechanics.pdf" class="download-btn" target="_blank">📥 Download PDF</a>
+                </div>
+            </div>
+
+            <!-- Note Card 2: Statistical Mechanics -->
+            <div class="note-card">
+                <div class="note-image placeholder">
+                    <!-- Replace with: <img src="assets/images/statistical-mechanics-preview.jpg" alt="Statistical Mechanics"> -->
+                </div>
+                <div class="note-content">
+                    <h2>Statistical Mechanics</h2>
+                    <div class="note-meta">
+                        <span>📅 Updated: December 2025</span>
+                        <span>📄 ~95 pages</span>
+                    </div>
+                    <div class="note-description">
+                        In-depth exploration of statistical mechanics principles, ensembles, and phase transitions with applications to real-world systems.
+                    </div>
+                    <div class="note-topics">
+                        <h3>Topics Covered:</h3>
+                        <ul>
+                            <li>Thermodynamic ensembles</li>
+                            <li>Partition functions</li>
+                            <li>Quantum & classical statistics</li>
+                            <li>Phase transitions</li>
+                            <li>Ising model</li>
+                        </ul>
+                    </div>
+                    <a href="notes/pdfs/statistical-mechanics.pdf" class="download-btn" target="_blank">📥 Download PDF</a>
+                </div>
+            </div>
+
+            <!-- Note Card 3: Classical Mechanics -->
+            <div class="note-card">
+                <div class="note-image placeholder">
+                    <!-- Replace with: <img src="assets/images/classical-mechanics-preview.jpg" alt="Classical Mechanics"> -->
+                </div>
+                <div class="note-content">
+                    <h2>Classical Mechanics</h2>
+                    <div class="note-meta">
+                        <span>📅 Updated: November 2025</span>
+                        <span>📄 ~80 pages</span>
+                    </div>
+                    <div class="note-description">
+                        Detailed treatment of classical mechanics from Newtonian to Hamiltonian formulations with solved examples.
+                    </div>
+                    <div class="note-topics">
+                        <h3>Topics Covered:</h3>
+                        <ul>
+                            <li>Newtonian mechanics</li>
+                            <li>Lagrangian formulation</li>
+                            <li>Hamiltonian mechanics</li>
+                            <li>Central force problems</li>
+                            <li>Rigid body dynamics</li>
+                        </ul>
+                    </div>
+                    <a href="notes/pdfs/classical-mechanics.pdf" class="download-btn" target="_blank">📥 Download PDF</a>
+                </div>
+            </div>
+
+            <!-- Note Card 4: Electrodynamics -->
+            <div class="note-card">
+                <div class="note-image placeholder">
+                    <!-- Replace with: <img src="assets/images/electrodynamics-preview.jpg" alt="Electrodynamics"> -->
+                </div>
+                <div class="note-content">
+                    <h2>Electrodynamics</h2>
+                    <div class="note-meta">
+                        <span>📅 Updated: October 2025</span>
+                        <span>📄 ~110 pages</span>
+                    </div>
+                    <div class="note-description">
+                        Complete notes on electromagnetic theory, from static fields to radiation and relativistic formulations.
+                    </div>
+                    <div class="note-topics">
+                        <h3>Topics Covered:</h3>
+                        <ul>
+                            <li>Maxwell's equations</li>
+                            <li>Electromagnetic waves</li>
+                            <li>Potentials & gauge theory</li>
+                            <li>Radiation theory</li>
+                            <li>Special relativity</li>
+                        </ul>
+                    </div>
+                    <a href="notes/pdfs/electrodynamics.pdf" class="download-btn" target="_blank">📥 Download PDF</a>
+                </div>
+            </div>
+
+            <!-- Note Card 5: Mathematical Methods -->
+            <div class="note-card">
+                <div class="note-image placeholder">
+                    <!-- Replace with: <img src="assets/images/mathematical-methods-preview.jpg" alt="Mathematical Methods"> -->
+                </div>
+                <div class="note-content">
+                    <h2>Mathematical Methods</h2>
+                    <div class="note-meta">
+                        <span>📅 Updated: September 2025</span>
+                        <span>📄 ~100 pages</span>
+                    </div>
+                    <div class="note-description">
+                        Essential mathematical techniques used in theoretical physics, with detailed proofs and applications.
+                    </div>
+                    <div class="note-topics">
+                        <h3>Topics Covered:</h3>
+                        <ul>
+                            <li>Complex analysis</li>
+                            <li>Differential equations</li>
+                            <li>Fourier & Laplace transforms</li>
+                            <li>Group theory</li>
+                            <li>Tensor calculus</li>
+                        </ul>
+                    </div>
+                    <a href="notes/pdfs/mathematical-methods.pdf" class="download-btn" target="_blank">📥 Download PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>How to Use These Notes</h2>
+            <p>These notes are compiled from lectures, textbooks, and my own understanding of the material. They serve as:</p>
+            <ul>
+                <li>Quick reference guides for key concepts and formulas</li>
+                <li>Supplementary study material for physics students</li>
+                <li>Personal documentation of my learning journey</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>Note:</strong> While I strive for accuracy, please use these notes alongside standard textbooks and consult with instructors for authoritative information.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Feedback & Corrections</h2>
+            <p>If you find any errors or have suggestions for improvements, please feel free to contact me at <a href="mailto:zhenming561@gmail.com" style="color: #667eea;">zhenming561@gmail.com</a>.</p>
+        </div>
+    </div>
 </body>
 </html>
