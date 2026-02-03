@@ -1,0 +1,1 @@
+Place your profile photo here as profile.jpg (recommended size: 300x300px or larger, square format)
