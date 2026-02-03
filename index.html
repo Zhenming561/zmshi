@@ -1,3 +1,101 @@
-<img src="assets/images/profile.jpg" alt="Profile Photo" />
-
-<!-- Other content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenming Shi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #5f2c82, #49a09d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 4px solid #5f2c82;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+        h3 {
+            margin: 5px 0;
+            font-weight: normal;
+            color: #666;
+        }
+        p {
+            margin: 5px 0;
+            color: #888;
+        }
+        nav {
+            margin: 30px 0;
+        }
+        nav a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #5f2c82, #49a09d);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        nav a:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer a {
+            color: #5f2c82;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-photo">
+            <img src="assets/images/profile.jpg" alt="Zhenming Shi Profile Photo">
+        </div>
+        <h1>Zhenming Shi</h1>
+        <h3>Undergraduate Physics Student</h3>
+        <p>Leipzig University</p>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="research.html">Research</a>
+            <a href="notes.html">Notes</a>
+            <a href="assets/cv/CV_Zhenming_Shi.pdf" target="_blank">CV</a>
+        </nav>
+        <footer>
+            <p><a href="mailto:zhenming561@gmail.com">zhenming561@gmail.com</a></p>
+            <p><a href="https://github.com/Zhenming561" target="_blank">GitHub: Zhenming561</a></p>
+        </footer>
+    </div>
+</body>
+</html>
