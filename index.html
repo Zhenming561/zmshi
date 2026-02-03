@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhenming Shi - Homepage</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Zhenming Shi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #5f2c82, #49a09d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            background-color: #ccc;
+            margin: 0 auto;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #5f2c82;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header class="hero-section">
-            <div class="profile-photo-placeholder">
-                <!-- Add your photo here: assets/images/profile.jpg -->
-                <div class="photo-circle">ZS</div>
-            </div>
-            <h1>Zhenming Shi</h1>
-            <p class="subtitle">Undergraduate Physics Student</p>
-            <p class="affiliation">Leipzig University</p>
-        </header>
-
-        <nav class="main-nav">
-            <a href="about.html" class="nav-link">About</a>
-            <a href="education.html" class="nav-link">Education</a>
-            <a href="research.html" class="nav-link">Research</a>
-            <a href="notes.html" class="nav-link">Notes</a>
-            <a href="assets/cv/CV_Zhenming_Shi.pdf" class="nav-link" target="_blank">CV</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+        <div class="profile-photo"></div>
+        <h1>Zhenming Shi</h1>
+        <h3>Undergraduate Physics Student</h3>
+        <p>Affiliation: Leipzig University</p>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Education</a>
+            <a href="#">Research</a>
+            <a href="#">Notes</a>
+            <a href="assets/cv/CV_Zhenming_Shi.pdf">CV</a>
         </nav>
-
-        <footer class="contact-info">
-            <p><a href="mailto:zhenming561@gmail.com">zhenming561@gmail.com</a></p>
-            <p><a href="https://github.com/Zhenming561" target="_blank">GitHub: @Zhenming561</a></p>
+        <footer>
+            <p>Email: zhenming561@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/Zhenming561">Zhenming561</a></p>
         </footer>
     </div>
 </body>
