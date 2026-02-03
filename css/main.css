@@ -1,60 +1,126 @@
-/* Resetting some basic styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-family: 'Arial', sans-serif;
 }
 
-/* Header styles */
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  font-family: var(--font-family);
+}
+
+/* Container styles */
+.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero .profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc; /* Placeholder color */
 }
 
 /* Navigation styles */
-nav {
-    background: #35424a;
-    padding: 10px 0;
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* Main content styles */
-main {
-    padding: 20px;
+.nav a:hover {
+  color: var(--secondary-color);
 }
 
 /* Footer styles */
-footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1f1f1;
 }
 
-/* Responsive styling */
+/* Responsive design */
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+  .container {
+    padding: 10px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .nav {
+    flex-direction: column;
+  }
+}
+
+/* Page template styles for subpages */
+.page-template {
+  padding: 30px;
+  border: 1px solid #ddd;
+}
+
+/* Timeline styles */
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin: 20px 0;
+}
+
+/* Research item styles */
+.research-item {
+  padding: 15px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+
+/* Note card styles */
+.note-card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Download button styles */
+.download-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: var(--secondary-color);
 }
