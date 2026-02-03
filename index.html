@@ -3,186 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhenming Shi - Academic Homepage</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Zhenming Shi - Homepage</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 24px;
+            margin: 5px 0;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Zhenming Shi</div>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <h1>Zhenming Shi</h1>
+    <h2>Undergraduate Physics Student</h2>
+    <p>Leipzig University</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#notes">Notes</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Zhenming Shi</h1>
-                    <p class="subtitle">Undergraduate Physics Student</p>
-                    <p class="affiliation">Leipzig University</p>
-                    <div class="hero-links">
-                        <a href="assets/cv/CV_Zhenming_Shi.pdf" class="btn btn-primary" target="_blank">Download CV</a>
-                        <a href="#contact" class="btn btn-secondary">Contact</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <!-- Placeholder for profile photo -->
-                    <div class="profile-placeholder">
-                        <p>Photo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About</h2>
-            <p>I am an undergraduate student in the International Physics Study Program at Leipzig University. My academic journey includes research experience in quantum physics, general relativity, and applications of machine learning in theoretical physics.</p>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section bg-light">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">2024–2027</div>
-                    <div class="timeline-content">
-                        <h3>B.Sc., International Physics Study Program</h3>
-                        <p class="institution">Leipzig University</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2020–2024</div>
-                    <div class="timeline-content">
-                        <h3>B.Sc., Applied Physics</h3>
-                        <p class="institution">Nanjing University of Aeronautics and Astronautics</p>
-                        <p class="courses"><strong>Core Courses:</strong> Quantum Mechanics (100), Methods of Mathematical Physics (98), Classical Mechanics and Electrodynamics (91), Atomic Physics (90)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="section">
-        <div class="container">
-            <h2>Research Experience</h2>
-            
-            <div class="research-item">
-                <div class="research-header">
-                    <h3>Quantum phase transitions based on deep learning</h3>
-                    <span class="research-year">2022–2023</span>
-                </div>
-                <p class="advisor"><strong>Advisor:</strong> Dr. Ming Xue</p>
-                <p><strong>Content:</strong> Applied deep neural networks to determine phase boundaries in quantum many-body systems (Ising-Hubbard, spin-1 Heisenberg, and spin-1 BBQ). Implemented an unsupervised Differential Cooperation Network (DCN) architecture combining convolutional and competitive layers to classify two-dimensional ground-state phase diagrams.</p>
-                <p><strong>Contribution:</strong> Built the full DCN pipeline in TensorFlow, performed data preprocessing from Monte Carlo simulations, and analyzed feature-map clustering without predefined labels. Identified compatibility issues between excitation spectra and network topology, and proposed dimensional input dimensionality to achieve full-phase map convergence.</p>
-            </div>
-
-            <div class="research-item">
-                <div class="research-header">
-                    <h3>Black hole volume and its correction under higher-order derivative gravity</h3>
-                    <span class="research-year">2023–2024</span>
-                </div>
-                <p class="advisor"><strong>Advisor:</strong> Dr. Yuxin An</p>
-                <p><strong>Content:</strong> Investigated the Christodoulou-Rovelli (C-R) volume, which quantifies black hole interior spacelike hypersurface area, under higher-order Riemann gravity in AdS spacetime. Studied how curvature topology (k = 1, 0, −1) and coupling constants modify the time linear growth and thermodynamic interpretation.</p>
-                <p><strong>Contribution:</strong> Derived the C-R volume analytically from the metric function, performed symbolic integration in Mathematica, and verified the persistence of linear growth via numerical evolution. Clarified the relation between higher-curvature corrections and the complexity–volume conjecture in holographic gravity.</p>
-            </div>
-
-            <div class="research-item">
-                <div class="research-header">
-                    <h3>Covariant Phase Space Approach to ADM conserved quantities and First Law of Black Hole Thermodynamics</h3>
-                    <span class="research-year">2025–2026</span>
-                </div>
-                <p class="advisor"><strong>Advisor:</strong> Dr. Stefan Hollands</p>
-                <p><strong>Content:</strong> Started from the ADM formalism of General Relativity and obtained ADM conserved quantities from the surface term of the ADM action. Developed a covariant phase space formulation of ADM charges and the first law of black hole thermodynamics for general diffeomorphism-invariant and higher-curvature gravity theories, where ADM charges and black-hole entropy arise as Noether charges at spatial infinity and on the horizon.</p>
-                <p><strong>Contribution:</strong> Derived Lee–Wald symplectic potential, Noether charge, and ADM conserved quantities in the covariant formalism; demonstrated the first law from charge variations; extended the analysis to f(R) gravity to compute corrections to conserved quantities and Wald entropy; and computed the ADM mass and angular momentum at spatial infinity for Schwarzschild and Kerr geometries.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards" class="section bg-light">
-        <div class="container">
-            <h2>Honors & Awards</h2>
-            <ul class="awards-list">
-                <li>
-                    <span class="award-year">2022</span>
-                    <span class="award-name">Second Prize, Chinese Undergraduate Physics Competition</span>
-                </li>
-                <li>
-                    <span class="award-year">2022</span>
-                    <span class="award-name">Second-class Academic Scholarship, Nanjing University of Aeronautics and Astronautics</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Tools & Software</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h4>Writing</h4>
-                    <p>LaTeX</p>
-                </div>
-                <div class="skill-item">
-                    <h4>Programming</h4>
-                    <p>Python, Julia, Mathematica</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Other Experience Section -->
-    <section id="other" class="section bg-light">
-        <div class="container">
-            <h2>Other Experience</h2>
-            <ul class="experience-list">
-                <li>
-                    <strong>2023.8</strong> - The Third Summer School of String Theory, Field Theory and Holographic Theory (Yau Shing Tong Center / Southeast University, Nanjing, China)
-                </li>
-                <li>
-                    <strong>2025.3</strong> - Jürgen Ehlers Spring School on Gravitational Physics (The Max Planck Institute for Gravitational Physics (Albert Einstein Institute), Potsdam, Germany)
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:zhenming561@gmail.com">zhenming561@gmail.com</a></p>
-                <p><strong>Location:</strong> Leipzig, Germany</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Zhenming561" target="_blank">@Zhenming561</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Zhenming Shi. Last updated: February 2026</p>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+    <p>Email: <a href="mailto:zhenming561@gmail.com">zhenming561@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Zhenming561">Zhenming561</a></p>
 </body>
 </html>
