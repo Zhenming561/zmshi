@@ -1,155 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Zhenming Shi — Academic Homepage</title>
-<meta name="description" content="Research in general relativity, black holes, and field theory." />
-<link rel="icon" href="data:," />
-<style>
-:root{--bg:#ffffff;--fg:#111;--muted:#666;--card:#f6f6f7;--link:#2563eb}
-@media (prefers-color-scheme: dark){
-  :root{--bg:#0b0b0c;--fg:#eaeaea;--muted:#9aa0a6;--card:#151517}
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
-a{color:var(--link);text-decoration:none}
-a:hover{opacity:.8}
-.container{max-width:980px;margin:0 auto;padding:24px}
-.top{display:flex;gap:18px;align-items:center}
-.top img{width:92px;height:92px;border-radius:16px;object-fit:cover}
-h1{margin:0 0 4px 0;font-size:28px}
-.muted{color:var(--muted)}
-nav{display:flex;gap:12px;margin:12px 0 20px 0;flex-wrap:wrap}
-.btn{border:1px solid var(--muted);border-radius:10px;padding:6px 10px;color:var(--fg)}
-.grid{display:grid;grid-template-columns:1fr;gap:18px}
-.card{background:var(--card);border:1px solid #0001;border-radius:14px;padding:14px}
-.card h2{margin:0 0 8px 0;font-size:18px}
-ul{margin:8px 0;padding-left:18px}
-.small{font-size:13px}
-kbd{border:1px solid var(--muted);border-bottom-width:2px;border-radius:6px;padding:0 6px;font-family:ui-monospace,Menlo}
-footer{margin:26px 0;color:var(--muted);font-size:13px;text-align:center}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenming Shi - Academic Homepage</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="container">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Zhenming Shi</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- ===== Profile configuration ===== -->
-<script>
-window.PROFILE = {
-  name: "Zhenming Shi",
-  title: "Physics Student · Leipzig University",
-  email: "zhenming@example.com",
-  links: {
-    Scholar: "https://scholar.google.com/",
-    ORCID: "https://orcid.org/0000-0000-0000-0000",
-    GitHub: "https://github.com/yourname",
-    arXiv: "https://arxiv.org/a/xxxx.html",
-    CV: "assets/cv.pdf"
-  }
-}
-</script>
-<!-- ===== end configuration ===== -->
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Zhenming Shi</h1>
+                    <p class="subtitle">Undergraduate Physics Student</p>
+                    <p class="affiliation">Leipzig University</p>
+                    <div class="hero-links">
+                        <a href="assets/cv/CV_Zhenming_Shi.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for profile photo -->
+                    <div class="profile-placeholder">
+                        <p>Photo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="top">
-  <img src="assets/avatar.jpg" alt="portrait">
-  <div>
-    <h1 id="name"></h1>
-    <div class="muted" id="title"></div>
-    <nav id="nav"></nav>
-  </div>
-</section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <p>I am an undergraduate student in the International Physics Study Program at Leipzig University. My academic journey includes research experience in quantum physics, general relativity, and applications of machine learning in theoretical physics.</p>
+        </div>
+    </section>
 
-<div class="grid">
-  <article class="card">
-    <h2>About</h2>
-    <p>I am an undergraduate physics student at Leipzig University.  
-    My research interests include general relativity, black holes, and
-    field theory. I also enjoy spectroscopy experiments and knot-theoretic
-    helicity studies.</p>
-  </article>
+    <!-- Education Section -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2024–2027</div>
+                    <div class="timeline-content">
+                        <h3>B.Sc., International Physics Study Program</h3>
+                        <p class="institution">Leipzig University</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020–2024</div>
+                    <div class="timeline-content">
+                        <h3>B.Sc., Applied Physics</h3>
+                        <p class="institution">Nanjing University of Aeronautics and Astronautics</p>
+                        <p class="courses"><strong>Core Courses:</strong> Quantum Mechanics (100), Methods of Mathematical Physics (98), Classical Mechanics and Electrodynamics (91), Atomic Physics (90)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <article class="card">
-    <h2>Publications & Preprints</h2>
-    <ul id="pubs"></ul>
-    <div class="small muted">Source: <code>data/publications.json</code></div>
-  </article>
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2>Research Experience</h2>
+            
+            <div class="research-item">
+                <div class="research-header">
+                    <h3>Quantum phase transitions based on deep learning</h3>
+                    <span class="research-year">2022–2023</span>
+                </div>
+                <p class="advisor"><strong>Advisor:</strong> Dr. Ming Xue</p>
+                <p><strong>Content:</strong> Applied deep neural networks to determine phase boundaries in quantum many-body systems (Ising-Hubbard, spin-1 Heisenberg, and spin-1 BBQ). Implemented an unsupervised Differential Cooperation Network (DCN) architecture combining convolutional and competitive layers to classify two-dimensional ground-state phase diagrams.</p>
+                <p><strong>Contribution:</strong> Built the full DCN pipeline in TensorFlow, performed data preprocessing from Monte Carlo simulations, and analyzed feature-map clustering without predefined labels. Identified compatibility issues between excitation spectra and network topology, and proposed dimensional input dimensionality to achieve full-phase map convergence.</p>
+            </div>
 
-  <article class="card">
-    <h2>Talks</h2>
-    <ul id="talks"></ul>
-    <div class="small muted">Source: <code>data/talks.json</code></div>
-  </article>
+            <div class="research-item">
+                <div class="research-header">
+                    <h3>Black hole volume and its correction under higher-order derivative gravity</h3>
+                    <span class="research-year">2023–2024</span>
+                </div>
+                <p class="advisor"><strong>Advisor:</strong> Dr. Yuxin An</p>
+                <p><strong>Content:</strong> Investigated the Christodoulou-Rovelli (C-R) volume, which quantifies black hole interior spacelike hypersurface area, under higher-order Riemann gravity in AdS spacetime. Studied how curvature topology (k = 1, 0, −1) and coupling constants modify the time linear growth and thermodynamic interpretation.</p>
+                <p><strong>Contribution:</strong> Derived the C-R volume analytically from the metric function, performed symbolic integration in Mathematica, and verified the persistence of linear growth via numerical evolution. Clarified the relation between higher-curvature corrections and the complexity–volume conjecture in holographic gravity.</p>
+            </div>
 
-  <article class="card">
-    <h2>Teaching</h2>
-    <ul id="teach"></ul>
-    <div class="small muted">Source: <code>data/teaching.json</code></div>
-  </article>
+            <div class="research-item">
+                <div class="research-header">
+                    <h3>Covariant Phase Space Approach to ADM conserved quantities and First Law of Black Hole Thermodynamics</h3>
+                    <span class="research-year">2025–2026</span>
+                </div>
+                <p class="advisor"><strong>Advisor:</strong> Dr. Stefan Hollands</p>
+                <p><strong>Content:</strong> Started from the ADM formalism of General Relativity and obtained ADM conserved quantities from the surface term of the ADM action. Developed a covariant phase space formulation of ADM charges and the first law of black hole thermodynamics for general diffeomorphism-invariant and higher-curvature gravity theories, where ADM charges and black-hole entropy arise as Noether charges at spatial infinity and on the horizon.</p>
+                <p><strong>Contribution:</strong> Derived Lee–Wald symplectic potential, Noether charge, and ADM conserved quantities in the covariant formalism; demonstrated the first law from charge variations; extended the analysis to f(R) gravity to compute corrections to conserved quantities and Wald entropy; and computed the ADM mass and angular momentum at spatial infinity for Schwarzschild and Kerr geometries.</p>
+            </div>
+        </div>
+    </section>
 
-  <article class="card">
-    <h2>Notes & Projects</h2>
-    <input id="q" placeholder="Search keyword or #tag" style="width:100%;padding:8px 10px;margin:6px 0;border:1px solid #aaa;border-radius:10px;background:transparent;color:inherit">
-    <ul id="notes"></ul>
-    <div class="small muted">Source: <code>data/notes.json</code> · Press <kbd>/</kbd> to focus search.</div>
-  </article>
-</div>
+    <!-- Awards Section -->
+    <section id="awards" class="section bg-light">
+        <div class="container">
+            <h2>Honors & Awards</h2>
+            <ul class="awards-list">
+                <li>
+                    <span class="award-year">2022</span>
+                    <span class="award-name">Second Prize, Chinese Undergraduate Physics Competition</span>
+                </li>
+                <li>
+                    <span class="award-year">2022</span>
+                    <span class="award-name">Second-class Academic Scholarship, Nanjing University of Aeronautics and Astronautics</span>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-<footer>© <span id="year"></span> <span id="name2"></span> · Hosted on GitHub Pages.</footer>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Tools & Software</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>Writing</h4>
+                    <p>LaTeX</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Programming</h4>
+                    <p>Python, Julia, Mathematica</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-const el = s => document.querySelector(s);
-const set = (s,v) => el(s).innerHTML=v;
-function liPub(p){
-  const a=p.authors?.join(', ')||'';
-  const meta=[p.venue,p.year].filter(Boolean).join(', ');
-  const links=(p.links||[]).map(x=>`<a href="${x.url}" target="_blank">${x.label}</a>`).join(' · ');
-  return `<li><b>${p.title}</b>${p.status?` <span class='small muted'>[${p.status}]</span>`:''}<br><span class="small">${a}${meta?' — '+meta:''}</span>${links?'<br>'+links:''}</li>`;
-}
-function liTalk(t){
-  const meta=[t.event,t.place,t.date].filter(Boolean).join(' · ');
-  const links=(t.links||[]).map(x=>`<a href="${x.url}" target="_blank">${x.label}</a>`).join(' · ');
-  return `<li><b>${t.title}</b><br><span class="small">${meta}</span>${links?'<br>'+links:''}</li>`;
-}
-function liTeach(t){
-  const meta=[t.term,t.role,t.institution].filter(Boolean).join(' · ');
-  const links=(t.links||[]).map(x=>`<a href="${x.url}" target="_blank">${x.label}</a>`).join(' · ');
-  return `<li><b>${t.course}</b><br><span class="small">${meta}</span>${links?'<br>'+links:''}</li>`;
-}
-function liNote(n){
-  const tags=(n.tags||[]).map(t=>`#${t}`).join(' ');
-  return `<li><a href="${n.url}" target="_blank">${n.title}</a> <span class="small muted">${tags} · ${n.date||''}</span>${n.desc?'<br><span class="small">'+n.desc+'</span>':''}</li>`;
-}
-async function load(path){try{const r=await fetch(path,{cache:'no-store'});return await r.json()}catch{return[]}}
-async function main(){
-  const P=window.PROFILE;
-  set('#name',P.name);set('#name2',P.name);set('#title',P.title);set('#year',new Date().getFullYear());
-  set('#nav',Object.entries(P.links).map(([k,v])=>`<a class="btn" href="${v}" target="_blank">${k}</a>`).join(' '));
-  const [pubs,talks,teach,notes]=await Promise.all([
-    load('data/publications.json'),
-    load('data/talks.json'),
-    load('data/teaching.json'),
-    load('data/notes.json')
-  ]);
-  set('#pubs',pubs.map(liPub).join(''));
-  set('#talks',talks.map(liTalk).join(''));
-  set('#teach',teach.map(liTeach).join(''));
-  set('#notes',notes.map(liNote).join(''));
-  const q=el('#q');
-  if(q){
-    document.addEventListener('keydown',e=>{if(e.key==='/'){e.preventDefault();q.focus()}});
-    q.addEventListener('input',()=>{
-      const s=q.value.toLowerCase();
-      const f=notes.filter(n=>{
-        const blob=(n.title+' '+(n.desc||'')+' '+(n.tags||[]).join(' ')).toLowerCase();
-        return blob.includes(s);
-      });
-      set('#notes',f.map(liNote).join(''));
-    });
-  }
-}
-main();
-</script>
-</div>
+    <!-- Other Experience Section -->
+    <section id="other" class="section bg-light">
+        <div class="container">
+            <h2>Other Experience</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>2023.8</strong> - The Third Summer School of String Theory, Field Theory and Holographic Theory (Yau Shing Tong Center / Southeast University, Nanjing, China)
+                </li>
+                <li>
+                    <strong>2025.3</strong> - Jürgen Ehlers Spring School on Gravitational Physics (The Max Planck Institute for Gravitational Physics (Albert Einstein Institute), Potsdam, Germany)
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:zhenming561@gmail.com">zhenming561@gmail.com</a></p>
+                <p><strong>Location:</strong> Leipzig, Germany</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Zhenming561" target="_blank">@Zhenming561</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Zhenming Shi. Last updated: February 2026</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
